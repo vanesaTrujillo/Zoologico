@@ -32,13 +32,13 @@ Se deben distinguir entre los animales que pueden aprovechar para la respiració
               </tr>
         <td><asp:ImageButton ID="ImageButton1"  align="center" runat="server" Height="152px" ImageUrl="~/img/caiman.jpg" Width="192px" PostBackUrl="~/PCaiman.aspx" /></td>
         <td> 
-            <asp:ImageButton ID="ImageButton5" align="center" runat="server" Height="152px" ImageUrl="~/img/ganzocisne.jpg" Width="192px" />
+            <asp:ImageButton ID="ImageButton5" align="center" runat="server" Height="152px" ImageUrl="~/img/ganzocisne.jpg" Width="192px" PostBackUrl="~/GanzoCisne.aspx" />
             
       <td> 
-          <asp:ImageButton ID="ImageButton6" align="center" runat="server" Height="152px" ImageUrl="~/img/Nutria.jpg" Width="192px" />
+          <asp:ImageButton ID="ImageButton6" align="center" runat="server" Height="152px" ImageUrl="~/img/Nutria.jpg" Width="192px" PostBackUrl="~/PNutria.aspx" />
             
          <td>
-             <asp:ImageButton ID="ImageButton7"  align="center" runat="server" Height="152px" ImageUrl="~/img/tortuga-mordedora.jpg" Width="192px" />
+             <asp:ImageButton ID="ImageButton7"  align="center" runat="server" Height="152px" ImageUrl="~/img/tortuga-mordedora.jpg" Width="192px" PostBackUrl="~/PTortuga.aspx" />
             
       
             </table>
