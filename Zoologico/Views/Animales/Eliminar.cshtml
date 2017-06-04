@@ -1,0 +1,80 @@
+﻿@model Zoologico.Models.Animales
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>¿Estas seguro que desea eliminar este animal?</h3>
+<div>
+    <h4>Animales</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Edad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaisOrigen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaisOrigen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Especie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Especie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subespecie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subespecie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CostumbresAlimenticias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CostumbresAlimenticias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>
